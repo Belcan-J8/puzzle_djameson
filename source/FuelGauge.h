@@ -1,5 +1,7 @@
 #pragma once
 
+#include <memory>
+
 #include "Logger.h"
 
 class FuelGauge
@@ -7,7 +9,8 @@ class FuelGauge
 public:
 	FuelGauge();
 	void DecrementFuelLevel();
+
 private:
 	int fuelLevel;
-	ILogger* logger;
+	std::unique_ptr<ILogger> logger;
 };

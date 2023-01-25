@@ -1,5 +1,7 @@
 #pragma once
 
+#include <memory>
+
 #include "FuelGauge.h"
 #include "Logger.h"
 
@@ -10,7 +12,8 @@ public:
 	void TurnLeft();
 	void TurnRight();
 	void Accelerate();
+
 private:
 	FuelGauge fuelGauge;
-	ILogger* logger;
+	std::unique_ptr<ILogger> logger;
 };

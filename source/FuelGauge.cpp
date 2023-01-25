@@ -2,9 +2,10 @@
 
 FuelGauge::FuelGauge()
 	: fuelLevel(5)
-	, logger(new Logger())
+	, logger(std::make_unique<Logger>())
 {
 }
+
 void FuelGauge::DecrementFuelLevel()
 {
 	--fuelLevel;
