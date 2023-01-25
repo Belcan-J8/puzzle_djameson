@@ -1,0 +1,10 @@
+# Dependencies
+[Dd]eps/
+
+# Build artifacts
+[Oo]bj/
+[Bb]in/
+
+# Visual Studio user files
+.vs
+*.user
