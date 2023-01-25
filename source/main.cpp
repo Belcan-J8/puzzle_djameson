@@ -1,8 +1,28 @@
 #include "Car.h"
 #include "Logger.h"
 
+#ifdef _WIN32
+	#include <Windows.h>
+#endif
+
+void config() {
+	// Enable escape sequences on Windows.
+#ifdef _WIN32
+	HANDLE handle = GetStdHandle(STD_OUTPUT_HANDLE);
+	if (handle == INVALID_HANDLE_VALUE) { return; }
+
+	DWORD mode;
+	if (!GetConsoleMode(handle, &mode)) { return; }
+
+	mode |= ENABLE_PROCESSED_OUTPUT | ENABLE_VIRTUAL_TERMINAL_PROCESSING;
+	SetConsoleMode(handle, mode);
+#endif
+}
+
 int main(int argc, char* argv[])
 {
+	config();
+
 	Logger logger;
 
 	logger.Log("Starting application");

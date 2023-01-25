@@ -1,4 +1,3 @@
-#define NOMINMAX
 #define TERMCOLOR_USE_ANSI_ESCAPE_SEQUENCES
 
 #include "log_utils.h"
