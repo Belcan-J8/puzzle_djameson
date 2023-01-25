@@ -1,9 +1,9 @@
 #pragma once
 
-#include <memory>
-
 #include "FuelGauge.h"
 #include "Logger.h"
+
+#include <memory>
 
 class Car
 {

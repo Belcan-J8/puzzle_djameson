@@ -1,8 +1,8 @@
 #pragma once
 
-#include <memory>
-
 #include "Logger.h"
+
+#include <memory>
 
 class FuelGauge
 {

@@ -143,11 +143,13 @@
     <ClCompile Include="source\FuelGauge.cpp" />
     <ClCompile Include="source\Logger.cpp" />
     <ClCompile Include="source\main.cpp" />
+    <ClCompile Include="source\log_utils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\Car.h" />
     <ClInclude Include="source\FuelGauge.h" />
     <ClInclude Include="source\Logger.h" />
+    <ClInclude Include="source\log_utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

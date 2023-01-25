@@ -1,4 +1,5 @@
 #include "FuelGauge.h"
+#include "log_utils.h"
 
 FuelGauge::FuelGauge()
 	: fuelLevel(5)
@@ -11,6 +12,6 @@ void FuelGauge::DecrementFuelLevel()
 	--fuelLevel;
 	if (fuelLevel < 2)
 	{
-		logger->Log("Low fuel!");
+		logger->Log(decorate(Level::Warn, "Low fuel!"));
 	}
 }

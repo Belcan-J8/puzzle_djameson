@@ -10,5 +10,5 @@ struct ILogger
 class Logger : public ILogger
 {
 public:
-	void Log(std::string string);
+	void Log(std::string string) override;
 };
