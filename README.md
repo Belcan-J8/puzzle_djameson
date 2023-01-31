@@ -30,7 +30,14 @@ Given the source code in this folder:
 1. Attach a screenshot of the output to the pull request
 
 ## Part 2
-TBD
+After you have completed part 1, a team member will push changes to a branch called *SupportColorfulLogging*. It seems while you were making these changes for our "customer", your team member made similar changes to solve the problem. We need to get on the same page!
+1. Create a new branch from the tip of your existing branch
+1. Merge the *SupportColorfulLogging* branch into your new branch
+1. Preserve the new Logger classes and usage in Car.cpp and FuelGauge.cpp (but feel free to suggest improvements)
+1. Ensure there are no regressions
+1. Commit your changes and open a new pull request
+1. Attach a screenshot of the output to the pull request
+1. Await instructions for Part 3
 
 ## Part 3
 TBD

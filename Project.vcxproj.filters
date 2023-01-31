@@ -27,9 +27,6 @@
     <ClCompile Include="source\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="source\log_utils.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\Car.h">
@@ -41,7 +38,7 @@
     <ClInclude Include="source\Logger.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="source\log_utils.h">
+    <ClInclude Include="lib\termcolor.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

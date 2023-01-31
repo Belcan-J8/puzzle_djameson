@@ -1,26 +1,25 @@
 #include "Car.h"
-#include "log_utils.h"
 
 Car::Car()
-	: logger(std::make_unique<Logger>())
+	: logger(std::make_unique<BlueLogger>())
 {
 }
 
 void Car::TurnLeft()
 {
-	logger->Log(decorate(Level::Info, "Turning left"));
+	logger->Log("Turning left");
 	fuelGauge.DecrementFuelLevel();
 }
 
 void Car::TurnRight()
 {
-	logger->Log(decorate(Level::Info, "Turning right"));
+	logger->Log("Turning right");
 	fuelGauge.DecrementFuelLevel();
 }
 
 void Car::Accelerate()
 {
-	logger->Log(decorate(Level::Info, "Moving ahead"));
+	logger->Log("Moving ahead");
 	fuelGauge.DecrementFuelLevel();
 	fuelGauge.DecrementFuelLevel();
 }

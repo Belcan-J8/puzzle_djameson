@@ -27,12 +27,5 @@ if "%VSCMD_VER%"=="" (
 	)
 )
 
-@rem Download dependencies.
-@rem Again, lets just get things up and running.
-@rem In the future it would probably be good to look into vcpkg/conan/submodules/YourFavoritePackageManager.
-if not exist "deps/termcolor" (
-	git clone --depth 1 --branch v2.1.0 https://github.com/ikalnytskyi/termcolor.git deps/termcolor
-)
-
 @rem Do the build.
 msbuild Project.sln /nologo /m /p:Configuration=Debug /p:Platform=x64
