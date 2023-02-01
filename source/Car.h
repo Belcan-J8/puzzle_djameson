@@ -3,6 +3,8 @@
 #include "FuelGauge.h"
 #include "Logger.h"
 
+#include <memory>
+
 class Car
 {
 public:
@@ -10,7 +12,8 @@ public:
 	void TurnLeft();
 	void TurnRight();
 	void Accelerate();
+
 private:
 	FuelGauge fuelGauge;
-	ILogger* logger;
+	std::unique_ptr<ILogger> logger;
 };
